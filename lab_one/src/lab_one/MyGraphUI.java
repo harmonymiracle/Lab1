@@ -1,3 +1,4 @@
+//B2 3
 package lab_one;
 
 import java.lang.*;

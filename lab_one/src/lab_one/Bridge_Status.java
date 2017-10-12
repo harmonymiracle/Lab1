@@ -1,3 +1,4 @@
+//B2 1
 package lab_one;
 
 public enum Bridge_Status {
