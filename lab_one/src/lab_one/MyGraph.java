@@ -1,4 +1,6 @@
-//B2 2
+
+//B2 2 <<<<<<< HEAD
+
 // this is the test sentence.
 
 package lab_one;
