@@ -5,6 +5,8 @@ import java.util.*;
 
 /*
  * first modify in myvalue.java, branch : master
+ * 
+ * C4 first modify
  */
 public class MyValue  implements Cloneable {
 	

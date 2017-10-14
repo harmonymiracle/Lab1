@@ -11,6 +11,8 @@ import java.awt.event.*;
 
 /*
  * first modify in mygraph.java, branch : master
+ * 
+ * C4 first modify
  */
 public class MyGraph {
 	
