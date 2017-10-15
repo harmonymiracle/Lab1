@@ -1,4 +1,8 @@
 
+//B2 2 <<<<<<< HEAD
+
+// this is the test sentence.
+
 package lab_one;
 
 import java.lang.*;
@@ -9,9 +13,6 @@ import java.awt.*;
 import java.awt.event.*;
 
 
-/*
- * first modify in mygraph.java, branch : master
- */
 public class MyGraph {
 	
 	private HashMap<String, MyValue> m_graphMap;

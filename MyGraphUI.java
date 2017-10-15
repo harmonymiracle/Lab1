@@ -1,3 +1,6 @@
+
+//B2 3 <<<<<<< HEAD
+
 package lab_one;
 
 import java.lang.*;

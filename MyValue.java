@@ -1,11 +1,10 @@
+
+//4   >>>>>>> C4
 package lab_one;
 
 import java.lang.*;
 import java.util.*;
 
-/*
- * first modify in myvalue.java, branch : master
- */
 public class MyValue  implements Cloneable {
 	
 	private HashMap<String, Integer> edge_to_weight;
