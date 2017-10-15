@@ -1,5 +1,4 @@
 package lab_one;
-
 import java.lang.*;
 import java.util.*;
 
@@ -9,6 +8,12 @@ import java.util.*;
  * B1 first modify
  * C4 first modify
  */
+
+package lab_one;
+
+import java.lang.*;
+import java.util.*;
+
 public class MyValue  implements Cloneable {
 	
 	private HashMap<String, Integer> edge_to_weight;

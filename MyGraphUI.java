@@ -1,3 +1,4 @@
+
 package lab_one;
 
 import java.lang.*;
@@ -13,10 +14,6 @@ import java.lang.reflect.*;
 import java.lang.reflect.Method;
 import java.lang.reflect.InvocationTargetException;
 
-/*
- * B1 first modify
- * C4 first modify
- */
 public class MyGraphUI extends JFrame {
 
 	private MyGraph graph ;
@@ -562,3 +559,4 @@ public class MyGraphUI extends JFrame {
 }
 	
 
+>>>>>>> company_branch
