@@ -1,5 +1,7 @@
+
 // self 2
-//B2 2 <<<<<<< HEAD
+
+
 
 // this is the test sentence.
 
@@ -717,3 +719,7 @@ public class MyGraph {
 
 
 
+<<<<<<< HEAD
+=======
+>>>>>>> company_branch
+>>>>>>> partner/1150310707

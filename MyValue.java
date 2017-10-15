@@ -1,5 +1,16 @@
 
-//4   >>>>>>> C4
+package lab_one;
+import java.lang.*;
+import java.util.*;
+
+/*
+ * first modify in myvalue.java, branch : master
+ * 
+ * B1 first modify
+ * C4 first modify
+ */
+
+
 package lab_one;
 
 import java.lang.*;

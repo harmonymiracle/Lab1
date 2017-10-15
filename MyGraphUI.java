@@ -1,5 +1,6 @@
-// self 3
-//B2 3 <<<<<<< HEAD
+
+
+
 
 package lab_one;
 
@@ -561,3 +562,7 @@ public class MyGraphUI extends JFrame {
 }
 	
 
+<<<<<<< HEAD
+=======
+>>>>>>> company_branch
+>>>>>>> partner/1150310707
