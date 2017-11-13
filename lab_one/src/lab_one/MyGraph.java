@@ -49,6 +49,25 @@ public class MyGraph {
     // can test module here
 
     }
+	
+	public final void testMain () {
+	    String text = "";
+        File file = new File("C:\\Users\\Mr.Wang\\Desktop\\test.txt");
+        try
+        {
+            BufferedReader buffer = new BufferedReader(new FileReader(file));
+            String read = "";
+            while((read = buffer.readLine()) != null)
+                text += read;
+            buffer.close();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+        this.CreateMap(text);
+        
+	}
 
 
 public final void createMap(String text){
