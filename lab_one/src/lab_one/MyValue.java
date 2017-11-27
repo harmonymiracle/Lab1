@@ -1,75 +1,90 @@
 package lab_one;
 
-
+import java.lang.*;
 import java.util.*;
 
 public class MyValue  implements Cloneable {
+	
+	private HashMap<String, Integer> edge_to_weight;
 
-    private HashMap<String, Integer> edgeToWeight;
-
-    private Integer outDegree;
-
-	public MyValue(String edgeEnd){
-		edgeToWeight = new HashMap<String, Integer>();
-		edgeToWeight.put(edgeEnd, 1);
+	private Integer outDegree;
+	
+	
+	
+	public MyValue(String edgeEnd)
+	{
+		edge_to_weight = new HashMap<String, Integer>();
+		edge_to_weight.put(edgeEnd, 1);
 		outDegree = 1;
 	}
-
-	public MyValue(String edgeEnd, Integer weight){
-		edgeToWeight = new HashMap<String, Integer>();
-		edgeToWeight.put(edgeEnd,  weight);
+	
+	
+	
+	public MyValue(String edgeEnd, Integer weight)
+	{
+		edge_to_weight = new HashMap<String, Integer>();
+		edge_to_weight.put(edgeEnd,  weight);
 		outDegree = 1;
 	}
-
-	public final HashMap<String, Integer> getEdgeInfo(){
-		return this.edgeToWeight;
+	
+	public HashMap<String, Integer> GetEdgeInfo(){
+		return this.edge_to_weight;
 	}
-
+	
+	
 	@Override
-    public final Object clone(){
+	public Object clone()
+	{
 		MyValue myvalue = null;
-		try{
+		try
+		{
 			myvalue = (MyValue)super.clone();
-			myvalue.edgeToWeight = (HashMap<String, Integer>)edgeToWeight.clone();
-		}catch(CloneNotSupportedException e){
+			myvalue.edge_to_weight = (HashMap<String, Integer>)edge_to_weight.clone();
+		}
+		catch(CloneNotSupportedException e)
+		{
 			e.printStackTrace();
 		}
 		return myvalue;
 	}
-
-	public final Integer getOutDegree(){
+	
+	public Integer GetOutDegree(){
 		return outDegree;
 	}
-
-
-
-	public final void addEdge(String edgeEnd){
-		if(this.edgeToWeight.containsKey(edgeEnd)){
-			setWeight(edgeEnd,getWeight(edgeEnd) +1) ;
-		} else{
-			this.edgeToWeight.put(edgeEnd, 1);
+	
+	public void AddEdge(String edgeEnd){
+		if(this.edge_to_weight.containsKey(edgeEnd)){
+			SetWeight(edgeEnd,GetWeight(edgeEnd) +1) ;
+		}
+		else{
+			this.edge_to_weight.put(edgeEnd, 1);
 			outDegree ++;
 		}
 	}
 
-
-	public final Integer getWeight(String key){
-		return edgeToWeight.get(key);
+	
+	public Integer GetWeight(String key)
+	{
+		return edge_to_weight.get(key);
+	}
+	
+	public void SetWeight(String key, Integer weight)
+	{
+		edge_to_weight.put(key, weight);
+	}
+	
+	public Boolean ContainsKey(String key)
+	{
+		return edge_to_weight.containsKey(key);
+	}
+	
+	
+	public Iterator GetKeySetIterator()
+	{
+		return edge_to_weight.keySet().iterator();
 	}
 
-	public final void setWeight(String key, Integer weight){
-		edgeToWeight.put(key, weight);
-	}
 
-	public final Boolean containsKey(String key){
-		return edgeToWeight.containsKey(key);
-	}
-
-	public final Iterator getKeySetIterator(){
-		return edgeToWeight.keySet().iterator();
-	}
-
-
-
+	
+	
 }
-
